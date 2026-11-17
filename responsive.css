@@ -46,19 +46,19 @@
 
   /* ---------- contact (mail + instagram) ---------- */
   .contact {
-    line-height: 1.15;
+    line-height: 1;
   }
 
   .contact a {
     display: block;
-    font-size: clamp(17px, 4vw, 26px);
+    font-size: clamp(15px, 4vw, 26px);
   }
 
   /* ---------- about : toujours visible ---------- */
   #description-about {
     display: block !important;   /* ignore l'attribut hidden */
     position: static;
-    font-family: "Amiamie-Regular";
+    font-family: "Amiamie-Light";
   }
 
   #description-about h2 {
@@ -68,7 +68,7 @@
   }
 
   #description-about > p {
-    font-size: clamp(16px, 3.2vw, 21px);
+    font-size: clamp(15px, 3.2vw, 21px);
     line-height: 1.3;
   }
 
