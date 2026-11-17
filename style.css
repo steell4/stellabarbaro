@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "Amiamie-Regular";
+  src: url("../fonts/Amiamie-Regular.woff") format("woff")
+}
+
+@font-face {
+  font-family: "Amiamie-Light";
+  src: url("../fonts/Amiamie-Light.woff") format("woff")
+}
+
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+a{
+  color: black;
+  text-decoration: none;}
+/*mise en page*/
+html { overflow-y: hidden; }
+
+body{
+/*background-color: pink;*/
+margin-left: 30px;
+margin-right: 30px;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: "Amiamie-Regular";
+font-size: 20px;
+}
+
+.menu{}
+
+.contact{
+  line-height: 0.8;}
+
+.contact a{
+  color: magenta;
+  font-size: 12px;
+}
+
+.foot1 p{
+  color: magenta;
+  font-size: 10px;
+  position:fixed  ;
+  bottom: 15px;
+  font-family: "Amiamie-Light";
+  display: grid;
+  opacity: 50%;
+}
+
+.foot1 a{
+  color: magenta;
+}
+
+.contenu {
+    background-color: white;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    bottom: 5px;
+    left: calc(21.1% + 30px); /* 30px après le trait */
+    overflow: hidden;
+    border-left: solid;
+    border-left-width: 0.1em;}
+
+/* Navigation en haut */
+.head2 {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: min(500px, 70%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: clamp(10px, 10vw, 80px);
+}
+
+.head2 > div {
+    cursor: pointer;
+    color: black;
+    transition: color 0.15s ease;
+    white-space: nowrap;
+}
+
+.head2 > div:hover,
+.head2 > div.active {
+    color: magenta;
+}
+
+/* Bandeau de kaomojis en bas */
+.foot2 {
+    position: absolute;
+    left: 30px;
+    right: 0;
+    bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/* Texte de description */
+.description {
+    position: absolute;
+    top:70px;
+    left: 30px;
+    right: 30px;
+    font-family: "Amiamie-Light";
+    display: grid;
+    grid-template-columns: minmax(0, 600px) 260px;
+    column-gap: 30px;
+    align-items: start;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* IMPORTANT : masque les sections fermées */
+.description[hidden] {
+    display: none !important;
+}
+
+.description h2{
+  grid-column: 1;
+  font-family: "Amiamie-Light";
+  font-size: 12px;
+  font-weight: normal;
+  color: magenta;
+  opacity: 50%;
+}
+
+.description > p {
+    grid-column: 1;
+}
+
+.about-likes {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    min-width: 260px;
+}
+
+.about-likes p{
+  color: magenta;
+}
+
+.about-likes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-likes li::before {
+    content: "> ";
+}
+
+/* Galerie silly */
+.galerie-silly {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    right: 30px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-content: flex-start;
+}
+
+.galerie-silly[hidden] {
+    display: none !important;
+}
+
+.titre-archive {
+    width: 100%;
+    font-size: 12px;
+    font-family: "Amiamie-Light";
+    color: black;
+}
+
+.galerie-silly img {
+    display: block;
+    width: 130px !important;
+    height: 90px !important;
+    max-width: 130px !important;
+    max-height: 90px !important;
+    object-fit: cover;
+    border: 1px solid black;
+    box-sizing: border-box;
+    flex: 0 0 120px;
+}
+
+/*galerie music*/
+.lecteur-music {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    overflow-y: auto;
+}
+
+.lecteur-music[hidden] {
+    display: none !important;
+}
+
+.lecteur-music iframe {
+    display: block;
+    max-width: 290px;
+    height: 320px;
+    border: none;
+}
+
+
+
+/* MENU DES PROJETS */
+
+.projets {
+    position: fixed;
+    left: 30px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    z-index: 10;
+}
+
+.projet-btn {
+    border: 1px solid black;
+    padding: 0px 2px;
+    background: white;
+    color: black;
+    font-family: "Amiamie-Regular";
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.projet-btn:hover,
+.projet-btn.active {
+    color: magenta;
+    border-color: magenta;
+}
+
+
+/* CONTENU DES PROJETS */
+
+.project-panel {
+    position: absolute;
+    left: 30px;
+    right: 0px;
+    bottom: 95px;
+    overflow-y: auto;
+    padding-right: 0px;
+    font-family: "Amiamie-Light";
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.project-panel[hidden] {
+    display: none !important;
+}
+
+.project-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.project-heading h2 {
+    margin: 0;
+    font-family: "Amiamie-Regular";
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
+
+.project-heading p {
+    margin: 0;
+    font-family: "Amiamie-Regular";
+    font-size: 14px;
+    font-weight: normal;
+    color: magenta;
+}
+
+
+.project-description {
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+/* Galerie horizontale des projets */
+
+.project-images {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+/* Images à hauteur identique, largeur variable */
+
+.project-images img {
+    display: block;
+    border: 1px solid black;
+    height: 170px;
+    width: auto;
+    max-width: none;
+    flex: 0 0 auto;
+    object-fit: contain;
+    /* Prévisualisation agrandie au survol */
+    cursor: zoom-in;
+}
+
+
+.project-images img:hover {
+    position: relative;
+    z-index: 9999;
+}
+
+/* Image agrandie au centre de l'écran */
+.image-preview {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto !important;
+    max-width: 55vw;
+    max-height: 55vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    z-index: 99999;
+}
+
+/* Vignette vidéo */
+.video-thumb {
+    position: relative;
+    height: 170px;
+    flex: 0 0 auto;
+}
+
+.video-thumb video {
+    display: block;
+    height: 170px;
+    width: auto;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.video-preview {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto !important;
+    max-width: 55vw;
+    max-height: 55vh;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+/* Indication sonore */
+.video-hint {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    color: magenta;
+    font-size: 12px;
+    pointer-events: none;
+}
