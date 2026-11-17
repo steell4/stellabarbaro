@@ -103,7 +103,7 @@
     flex: none;
   }
 
-  /* on garde seulement 6 vignettes (la 7e est cachée) */
+/*chache vignette 7*/
   #galerie-silly img:nth-of-type(n+7) {
     display: none;
   }
