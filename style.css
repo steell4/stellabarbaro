@@ -97,7 +97,24 @@ font-size: 20px;
     overflow: hidden;
     white-space: nowrap;
 }
+/* kaomojis en boucle continue */
+.defile {
+  display: flex;
+  width: max-content;
+  animation: defile 30s linear infinite;
+}
 
+.defile p {
+  flex: none;
+  white-space: nowrap;
+  word-spacing: 0.8em;      /* espace entre les kaomojis */
+  padding-right: 2.5em;     /* même espace à la jonction des deux copies */
+}
+
+@keyframes defile {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-80%); }   /* -50% = exactement une copie */
+}
 
 /* Texte de description */
 .description {
