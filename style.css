@@ -192,7 +192,7 @@ font-size: 18px;
     font-size: 12px;
     font-family: "Amiamie-Light";
     color: black;
-    opacity: 80%
+    opacity: 50%
 }
 
 .galerie-silly img {
@@ -237,7 +237,7 @@ font-size: 18px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 30px;
     z-index: 10;
 }
 
@@ -289,7 +289,7 @@ font-size: 18px;
     font-size: 14px;
     font-weight: normal;
     color: black;
-    opacity: 80%;
+    opacity: 50%;
 }
 
 .project-heading p {
