@@ -74,6 +74,7 @@ font-size: 18px;
     justify-content: flex-start;
     align-items: flex-start;
     gap: clamp(10px, 10vw, 80px);
+    font-size: 14px;  
 }
 
 .head2 > div {
@@ -191,6 +192,7 @@ font-size: 18px;
     font-size: 12px;
     font-family: "Amiamie-Light";
     color: black;
+    opacity: 80%
 }
 
 .galerie-silly img {
@@ -235,7 +237,7 @@ font-size: 18px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 15px;
     z-index: 10;
 }
 
@@ -287,6 +289,7 @@ font-size: 18px;
     font-size: 14px;
     font-weight: normal;
     color: black;
+    opacity: 80%;
 }
 
 .project-heading p {
@@ -295,6 +298,7 @@ font-size: 18px;
     font-size: 12px;
     font-weight: normal;
     color: magenta;
+    opacity: 50%;
 }
 
 
