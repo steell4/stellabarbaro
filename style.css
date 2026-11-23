@@ -73,7 +73,7 @@ font-size: 18px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: clamp(10px, 10vw, 80px);
+    gap: clamp(10px, 10vw, 30px);
     font-size: 14px;  
 }
 
