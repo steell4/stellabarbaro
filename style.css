@@ -32,7 +32,7 @@ font-size: 18px;
 .menu{}
 
 .contact{
-  line-height: 0.5;}
+  line-height: 0.8;}
 
 .contact a{
   color: magenta;
@@ -62,7 +62,7 @@ font-size: 18px;
     left: calc(21.1% + 30px); /* 30px après le trait */
     overflow: hidden;
     border-left: solid;
-    border-left-width: 0.1em;}
+    border-left-width: 0.05em;}
 
 /* Navigation en haut */
 .head2 {
