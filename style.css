@@ -59,7 +59,7 @@ font-size: 18px;
     top: 10px;
     right: 30px;
     bottom: 5px;
-    left: calc(21.1% + 30px); /* 30px après le trait */
+    left: calc(15.1% + 30px); /* 30px après le trait */
     overflow: hidden;
     border-left: solid;
     border-left-width: 0.05em;}
