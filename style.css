@@ -86,6 +86,7 @@ font-size: 18px;
 .head2 > div:hover,
 .head2 > div.active {
     color: magenta;
+    text-decoration: underline;
 }
 
 /* Bandeau de kaomojis en bas */
@@ -252,6 +253,7 @@ font-size: 18px;
 .projet-btn:hover,
 .projet-btn.active {
     color: magenta;
+    text-decoration: underline;
 }
 
 
